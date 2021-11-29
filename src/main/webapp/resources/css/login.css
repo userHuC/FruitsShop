@@ -1,0 +1,89 @@
+*{
+	margin:0;
+	padding:0;
+	list-style:none;
+	font-size:12px;
+	}
+.gin_a{
+	width: 538px;
+	height: 424px;
+	margin: 0 auto;
+	padding-top: 100px;
+}
+.gin_a1{
+	width: 538px;
+	height: 83px;
+}
+.gin_a2{
+	width: 538px;
+	height: 341px;
+}
+.gin_a2a{
+	width: 538px;
+	height: 71px;
+	background-color: #dddddd;
+}
+.gin_a2b{
+	width: 538px;
+	height: 200px;
+	border-top: none;
+	border: 1px solid #bfbfbf;
+}
+.namepaw{
+	padding-top: 20px;
+	width: 300px;
+	margin: 0 auto;
+}
+.na{
+	font-size: 25px;
+	font-weight: bold
+}
+.inp{
+	width: 200px;
+	height: 25px;
+}
+.sub{
+	padding-top: 20px;
+	width: 300px;
+	margin: 0 auto;
+	padding-right: 40px;
+}
+.btu{
+	width: 200px;
+	height: 35px;
+	float: right;
+	background-color: #aa0000;
+	color: #ffffff;
+	border: none;
+	font-size: 20px;
+}
+.log{
+	width: 538px;
+	height: 20px;
+}
+.loga{
+	font-size: 16px;
+	float: right;
+	color: #676767;
+}
+.logb{
+	font-size: 16px;
+	color: #AA0000;
+	text-decoration: none;
+}
+.reg{
+	padding-top: 50px;
+	width: 540px;
+	height: 400px;
+	margin: 0 auto;
+}
+.rega{
+	width: 540px;
+	height: 320px;
+}
+.regb{
+	width: 540px;
+	height: 320px;
+	border-top: none;
+	border: 1px solid #bfbfbf;
+}

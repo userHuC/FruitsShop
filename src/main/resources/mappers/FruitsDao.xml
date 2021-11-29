@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.shop.dao.FruitsDao">
+    <!-- 代码编写处 -->
+
+    <select id="selectAllFruits" resultType="Fruits">
+        select * from fruits
+    </select>
+
+    <select id="selectFruitsClass" parameterType="String" resultType="Fruits">
+        select * from fruits where fruits_class=#{0}
+    </select>
+
+    <select id="selectByFruitsName" parameterType="String" resultType="Fruits">
+        select * from fruits where fruits_name=#{0}
+    </select>
+
+    <select id="selectVagueFruits" parameterType="String" resultType="Fruits">
+        select * from fruits where `explain` like #{0} or fruits_name like #{0}
+    </select>
+
+    <select id="selectAllOrder" resultType="OrderFrom">
+        select * from order_from
+    </select>
+
+    <insert id="toByShopping" parameterType="OrderFrom">
+        insert into order_from(fruits_name,price,lei,site,state,username) value(#{fruitsName},#{price},#{lei},#{site},#{state},#{username})
+    </insert>
+
+    <update id="updateFruitsBuy" parameterType="String">
+        update order_from set `state`="已发货" where username=#{0}
+    </update>
+
+    <insert id="insertFruits" parameterType="Fruits">
+        insert into fruits(fruits_name,price,`explain`,site,fruits_class) value(#{fruitsName},#{price},#{explain},#{site},#{fruitsClass})
+    </insert>
+
+    <delete id="deleteFruits" parameterType="String">
+        delete from fruits where fruits_name=#{0}
+    </delete>
+
+</mapper>
